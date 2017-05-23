@@ -41,7 +41,7 @@ export class Ng2TweetComponent implements OnInit, AfterViewInit
 			{
 				let nativeElement = this.element.nativeElement;
 
-				window['twttr'].widgets.createTweet(this.tweetId, nativeElement, {}).then
+				window['twttr'].widgets.createTweet(this.tweetId, nativeElement,{theme: 'dark'}).then
 				(
 					function success(embed) 
 					{
